@@ -2,7 +2,6 @@ let { people } = require('../data')
 const {banco_de_dados} = require('../banco.js')
 
 const getPeople = (req, res) => {
-    banco_de_dados()
     res.status(200).json({ sucess: true, data: people })
 }
 
